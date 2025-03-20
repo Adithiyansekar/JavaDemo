@@ -1,3 +1,153 @@
+myVar = "Adithiyan aniani";
+console.log(myVar.length)
+console.log(myVar.charAt(1)) - d --
+console.log(myVar.indexof(ith)) - 2 , an - 7, Ad - 0 -- 
+console.log(myVar.lastIndexof(ani)) - 13 -- it shows last index number and if the letters are not in the variable it will show -1 as result
+console.log(myVar.slice(5,8)) -- From 5th to 8th.it gives 5,6,7 only iya, if index value 5 only is given means it gives full string in the variable, if second index value is lower than first means it won show any result.
+console.log(myVar.toUpperCase())
+console.log(myVar.toLowerCase())
+console.log(myVar.includes(surt)) - not in the myVar so it will show False,  if Adi means true because its in the myVar
+console.log(myVar.split("h")) -[ "Adit","iyan aniani"] - it splits h left and right and if we split empty space means it will split first and secondy word as seperate string in list
+
+								NUMBERS:
+
+const myVar= "423"
+console.log(myVar.number) -42
+console.log(Number(myVar)) - To change sring '42' to integer 42.
+console.log(myVar.number + 3) = output:  "4244" and 4233 in console
+console.log(Number("9") +3) = NAN
+NAN - NOT A NUMBER
+console.log(Number(true) +3) = 4 , True=1, False =0.
+console.log(Number.isInteger(4)) - True. if 4.0 means False because it is float value.
+myvar = "423.20525aaa"
+console.log(Number.parseFloat(myVar)); = 423.20525. it converts string into float and only gives the float number value.
+console.log(Number.parseFloat(myVar).toFixed(2)); = 423.20. Same as above but it gives string value as result eventhough Number is used.
+console.log(Number.parseInt(myVar)) = 423. It only gives integer value as result.
+
+console.log(myVar.toString()); - it changes float,int values into string.
+
+CHAINING: 
+console.log(myvar.parseFloat(2).toString()); -It give 2digit float value and changes into string as well.
+
+THERE ARE TWO TYPE OF NAN:
+1.) Number.isNaN() - Number isNaN
+
+console.log(Number.isNaN(20)) - False. because 20 is a number , so Number.isNaN statement is False. Usually Number.isNaN checks its data type also.
+console.log(Number.isNaN("Hai")) - False. "Hai" is string value so answer would be True but here Number function refers, isNaN should contains number only, so data type error will come so that answer is false.
+
+2.) isNaN() - Global isNaN
+
+console.log(isNaN("Hai")) - True
+console.log(isNaN(20)) - False
+
+							MATH PROPERTIES:
+console.log(Math.PI); = 3.14592....
+console.log(Math.trunc(Math.PI)); = 3 - It rounds off the decimal values.
+console.log(Math.round(4.8)) = 5. if 4.3 means 4.
+console.log(Math.ceil(4.2)) = 5. if 4.8 means 5. it round off next higher value.
+console.log(Math.floor(4.9)) = 4. if 4.2 means 4. it round off previous lower value.
+console.log(Math.pow(3,4)) = (3*3*3*3) = 81. First number refers to the real number for multiplu, second number refers how many times to multiply.
+
+console.log(Math.min(10,2,11,4)) = 2 . it give minimum number in result.
+console.log(Math.max(10,12,1)) = 12 . It gives maximum number in result.
+console.log(Math.random()); = 0.23445 . It gives different values everytime under 1.
+console.log(Math.random()*10 + 1); = 4. it gives 1 to 10 any random value.
+
+const myName = "Adithiyan";        
+console.log(myName.charAt((Math.floor(Math.random()*myName.length))));
+
+
+							IF STATEMENTS:
+let testScore = 66;
+let grade;
+let collegeStudent= true;
+
+if (testScore>=90){
+    grade = 'A';
+}else if (testScore>=80) {
+    grade = 'B';
+}else if (testScore>=70) {
+    grade = 'C';
+}else if (testScore>=60) {
+    grade = 'D';
+}else {
+    if (collegeStudent) {
+        grade = 'RA';
+    }else {
+        grade = 'F';
+    }
+}
+console.log(grade);
+
+
+
+							SWITCH STATEMENT:
+
+
+
+let player = "Rock";
+let computer = "Paper";
+
+switch(player) {
+    case computer:
+        console.log("Game Tie!...")
+        break;    
+    
+    case "Rock":
+        if (computer === "Scissors"){
+            console.log("Player wins!!!...");
+        }else{
+            console.log("Computer wins....");
+        }
+        break;
+    
+    case "Paper":
+        if (computer === "Rock") {
+            console.log("Player wins!!!...");
+        }else {
+            console.log("Computer wins....");
+        }
+        break;
+
+    case "Scissors":
+        if (computer === "Paper") {
+            console.log("Player wins!!!...");
+        }else {
+            console.log("COmputer wins....");
+        }
+        break;
+
+    default:
+        console.log("Enter Rock, Paper or Scissors.");
+
+}
+
+
+							TERNARY OPERATORS:
+
+let car = BMW;
+let serviced = car? "Yes..you are ready to go." : "No...you aren't.";
+consolr.log(serviced);
+
+
+let testScore = 50;
+let collegeStudent = true;
+let grade = testScore > 89 ? "A" : testScore > 79 ? "B" : testScore > 69 ? "C" : testScore > 59 ? "D" : collegeStudent ? "RA" : "F";
+console.log(grade);
+
+
+
+
+                                                    WEBSITE DEMO:
+let player = "Rock";
+let computer = "Paper";
+let result =
+    player === computer ? "Tie game..."
+    : player ===  "Rock" && computer === "Scissors" ? "Player wins!!!..."
+    : player === "Scissors" && computer === "Paper" ? "Player wins!!!..."
+    : player === "Paper" && computer === "Rock" ? "Player wins!!!..."
+    : "Computer wins....";
+console.log(result)
 
 
 
@@ -16,7 +166,7 @@ if (my) {
 console.log(my.trim().length);
 
 
-WEBSITE DEMO:
+                                                    WEBSITE DEMO:
 let playGame = confirm("Shall we play rock, paper, or scissors?");
 if (playGame) {
   //play
